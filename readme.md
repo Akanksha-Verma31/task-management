@@ -12,7 +12,7 @@ Database: Firebase Firestore**
 
 ### Splashscreen
 
-<img alt="screenshot" src="https://github.com/Akanksha-Verma31/task-management/blob/master/screenshots/splashscreen.jpeg" width="200" /><img alt="screenshot" src="https://github.com/Akanksha-Verma31/task-management/blob/master/screenshots/splash2.png" width="200" />
+<img alt="screenshot" src="https://github.com/Akanksha-Verma31/task-management/blob/master/screenshots/splashscreen.jpeg" width="200" />    <img alt="screenshot" src="https://github.com/Akanksha-Verma31/task-management/blob/master/screenshots/splash2.png" width="200" />
 
 ### Login
 
