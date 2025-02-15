@@ -7,23 +7,11 @@ import {
   Image,
   KeyboardAvoidingView,
   Platform,
-  Dimensions,
 } from 'react-native';
 import { Link, useRouter } from 'expo-router';
 import { useAuth } from '../context/AuthContext';
 import { FirebaseError } from 'firebase/app';
 import { AuthStyles } from '~/styles/AuthStyles';
-
-const SPACING = {
-  xs: 4,
-  sm: 8,
-  md: 12,
-  lg: 16,
-  xl: 24,
-  xxl: 32,
-} as const;
-
-const { width, height } = Dimensions.get('window');
 
 export default function LoginScreen() {
   const [email, setEmail] = useState('');
@@ -47,6 +35,7 @@ export default function LoginScreen() {
         switch (error.code) {
           case 'auth/user-not-found':
           case 'auth/wrong-password':
+          case 'auth/invalid-credential':
             Alert.alert('Error', 'Invalid email or password');
             break;
           case 'auth/invalid-email':

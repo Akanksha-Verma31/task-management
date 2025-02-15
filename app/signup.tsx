@@ -45,6 +45,9 @@ export default function SignupScreen() {
           case 'auth/weak-password':
             Alert.alert('Error', 'Password is too weak');
             break;
+          case 'auth/invalid-credential':
+            Alert.alert('Error', 'Invalid email or password');
+            break;
           default:
             Alert.alert('Error', 'An error occurred during signup');
         }
