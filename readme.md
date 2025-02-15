@@ -10,6 +10,13 @@ Database: Firebase Firestore**
 [AAB](https://github.com/Akanksha-Verma31/task-management/releases/download/v1/app-release.aab)
 [WEB](https://task-management-chi-ten.vercel.app)
 
+## The app includes:
+
+- User authentication using Firebase (email/password)
+- Task creation, editing, deletion, and filtering by priority/status
+- Local data storage and backend integration
+- A clean and responsive UI following Material Design principles
+
 ### Splashscreen
 
 <img alt="screenshot" src="https://github.com/Akanksha-Verma31/task-management/blob/master/screenshots/splashscreen.jpeg" width="200" />    <img alt="screenshot" src="https://github.com/Akanksha-Verma31/task-management/blob/master/screenshots/splash2.png" width="200" />
