@@ -1,4 +1,9 @@
 import { initializeApp } from 'firebase/app';
+import { initializeAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+//@ts-ignore
+import { getReactNativePersistence } from '@firebase/auth/dist/rn/index.js';
 
 // Optionally import the services that you want to use
 // import {...} from "firebase/auth";
@@ -19,8 +24,12 @@ const firebaseConfig = {
   measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-const firebase = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+export const auth = initializeAuth(app, {
+  persistence: getReactNativePersistence(AsyncStorage),
+});
+export const db = getFirestore(app);
 // For more information on how to access Firebase in your project,
 // see the Firebase documentation: https://firebase.google.com/docs/web/setup#access-firebase
 
-export default firebase;
+export default app;
